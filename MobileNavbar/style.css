@@ -1,0 +1,37 @@
+/* my style 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+button{
+    width: 5.5em;
+    height: 2.5em;
+    border: none;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: #E0E0E0;
+}
+
+ul{
+   display: block;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+} */
+
+/* another css style from youtube */
