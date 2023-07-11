@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 60vh;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:0.5rem;
+        }
+        
+        .color-box{
+           width: 200px;
+           height: 150px;
+           border:1px solid blue;
+           cursor: pointer;
+           border-radius: 0.2rem;
+        }
+
+        #white{
+            background-color: #fff;
+        }
+
+        #gray{
+            background-color: #ccc;
+        }
+
+        #black{
+            background-color: black;
+        }
+        #aqua{
+            background-color:aqua;
+        }
+    </style>
+    <title>background color changer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="color-box" id="white"></div>
+        <div class="color-box" id="gray"></div>
+        <div class="color-box" id="black"></div>
+        <div class="color-box" id="aqua"></div>
+    </div>
+    <script>
+            const containerBg=document.querySelector(".container");
+            const colorSel=document.querySelectorAll(".color-box");
+            const changeBg=(e)=>{
+                const colorBox=e.target.id;
+                if(colorBox==='white'){
+                    containerBg.style.backgroundColor=colorBox;
+                }
+                if(colorBox==='gray'){
+                    containerBg.style.backgroundColor=colorBox;
+                }
+                if(colorBox==='black'){
+                    containerBg.style.backgroundColor=colorBox;
+                }
+                if(colorBox==='aqua'){
+                    containerBg.style.backgroundColor=colorBox;
+                }
+            }
+            colorSel.forEach(element=>{
+                element.addEventListener('click',changeBg)
+            })
+
+    </script>
+</body>
+</html>
