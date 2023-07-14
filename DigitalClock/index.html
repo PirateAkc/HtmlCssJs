@@ -9,9 +9,10 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #F7F8FC;
         }
         .container{
-            height: 100vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -20,21 +21,19 @@
         .clock{
             padding: 1rem;
             text-align: center;
-            width: 10%;
+            min-width: 10%;
             border:1px solid #ccc;
             border-radius: 0.4rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
         }
     </style>
 </head>
 <body>
 <div class="container">
-     <h1>Indian Standar Time </h1>
-     <div class="clock">20:13:43</div>
+     <h1>Indian Standard Time </h1>
+     <div class="clock"></div>
      <script>
         const digitalClock=document.querySelector(".clock");
-        
-        
-        
         setInterval(()=>{
             let date=new Date();
             digitalClock.innerHTML=date.toLocaleTimeString();
