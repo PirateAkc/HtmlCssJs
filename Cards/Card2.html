@@ -22,6 +22,7 @@
         background-color: #fff;
         width: 19rem;
         height: 70%;
+        /* min-height: 30rem; */
         border-radius: 10px;
         gap:20px;
     }
@@ -36,9 +37,11 @@
     .card-container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap:10px;
-        padding: 1.2rem;
+        /* padding: 1.2rem; */
+        padding: 2rem;
     }
     h1{
         font-size: 1rem;
@@ -85,6 +88,13 @@
         text-decoration: none;
         font-size: 0.8rem;
     }
+    /* responsive */
+    @media (max-width: 900px) {
+     .card{
+        height: 28rem;
+     }
+  }
+
     </style>
 </head>
 <body>
