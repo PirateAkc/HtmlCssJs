@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+       margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+    .container{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2980B9;
+    }
+    .card{
+        /* background-color: ; */
+        min-width: 60%;
+        width: 60%;
+        height: 65%;
+        display: flex;
+    }
+    .right{
+        width: 50%;
+        background-image: url("card1.jpg");
+        background-size: cover;
+    }
+    .left{
+        background-color: #450842;
+        width: 50%;
+        color:white;
+        padding:2.9rem;
+    }
+    
+    .left .left-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:3.7rem;
+    }
+    .left .left-box h1{
+        font-size: 1.5rem;
+    }
+    .number-box{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .number-box .number .num-head{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .number-box .number .num-foot{
+        font-size: 0.8rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div class="left-box">
+                    <h1>Get Insights that Help Your buisness grow</h1>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam id quas nulla molestias nobis minus quasi totam iure saepe cum tempore </p>
+                    <div class="number-box">
+                        <div class="number">
+                            <p class="num-head">10K+</p>
+                            <p class="num-foot">comments</p>
+                        </div>
+                        <div class="number">
+                            <p class="num-head">214</p>
+                            <p class="num-foot">Paid user</p>
+                        </div>
+                        <div class="number">
+                            <p class="num-head">12M+</p>
+                            <p class="num-foot">Views</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
