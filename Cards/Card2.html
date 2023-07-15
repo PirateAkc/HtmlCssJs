@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <style>
+    *{
+       margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+    .container{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2980B9;
+    }
+    .card{
+        
+        background-color: #fff;
+        width: 19rem;
+        height: 70%;
+        border-radius: 10px;
+        gap:20px;
+    }
+    .card-image{
+     height: 30%;
+    }
+    .card-image img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        padding: 1.2rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    #txt-detail{
+        text-align: center;
+        width: 95%;
+    }
+    .card-container .amt-box{
+        width:100%;
+        height: 3.5rem;
+        background-color: #8BC6EC;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+
+    }
+    .amt-price{
+        height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+    }
+    img{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 9px;
+    }
+    button{
+        width: 100%;
+        border-radius: 10px;
+        background-color: #051346;
+        color: white;
+        height: 2.5rem;
+        outline: none;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        cursor: pointer;
+    }
+    #cancel{
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <img src="card1.jpg">
+            </div>
+            <div class="card-container">
+                <h1>Order Summary</h1>
+                 <p id="txt-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, alias nemo distinctio, sunt magni  </p>
+                <div class="amt-box">
+                    <div class="amt-price">
+                        <img src="music.jpeg" alt="music">
+                        <div class="amt-detail">
+                            <p>amount</p>
+                            <p>$9.55</p>
+                        </div>
+                    </div>
+                    <div class="link">
+                        <a href="#">check</a>
+                    </div>
+                </div>
+                <button>Proceed to Payment</button>
+                <a href="#" id="cancel">cancel order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
